@@ -1,0 +1,25 @@
+ <h1>WORK</h1>
+ <!-- ini -->
+ <div class="col-xl-3 col-lg-4 col-sm-6 " *ngFor='let product of products | async'>
+    <div class="product text-center ">
+        <div class="position-relative mb-3 ">
+            <a class="d-block "><img class="img-fluid w-100 " src="{{product.image}}" alt="watches "></a>
+            <div class="product-overlay ">
+
+            </div>
+        </div>
+        <h6>
+            <p class="reset-anchor ">{{product.itemname}}
+            </p>
+            <p class="reset-anchor ">{{product.describe}}
+            </p>
+            <p class="reset-anchor ">{{product.price}}
+            </p>
+            <a  class="btn btn-primary">Cart</a>
+            <a class="btn btn-danger" routerLink="/product">Buy</a>
+        </h6>
+
+
+    </div>
+</div>
+<!-- akhir -->
